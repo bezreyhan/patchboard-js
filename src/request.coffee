@@ -1,6 +1,8 @@
 http = require "http"
 https = require "https"
 URL = require "url"
+Promise = require "bluebird"
+
 try
   zlib = require "zlib"
 catch error
