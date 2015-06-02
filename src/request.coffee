@@ -2,6 +2,7 @@ http = require "http"
 https = require "https"
 URL = require "url"
 Promise = require "bluebird"
+console.log Promise
 
 try
   zlib = require "zlib"
