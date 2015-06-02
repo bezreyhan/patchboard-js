@@ -14,10 +14,11 @@
     "lib/"
   ],
   "dependencies": {
-    "jsck": "~0.1.4",
-    "fairmont": "~0.8.2",
+    "bluebird": "^2.9.27",
     "coffee-script": "~1.7.1",
-    "evie": "~0.1.3"
+    "evie": "~0.1.3",
+    "fairmont": "~0.8.2",
+    "jsck": "~0.1.4"
   },
   "devDependencies": {
     "deap": "~0.2.0",
