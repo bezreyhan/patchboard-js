@@ -36,6 +36,8 @@ module.exports = class Request extends EventEmitter
       path: path
       method: @method
       headers: @headers
+      scheme: protocol.replace ':', ''
+      withCredentials: false
 
     if @body? && Buffer?
       @headers["Content-Length"] = Buffer.byteLength(@body)
@@ -131,10 +133,7 @@ class ResponseContent
   process: (callback) ->
     # TODO: take encoding into account
     # TODO: check content-length against actual length
-    if Buffer?
-      @buffer = Buffer.concat @chunks, @length
-    else
-      @buffer = @chunks.join("")
+    @buffer = @chunks.join("")
 
     @process_encoding =>
       @process_type callback
