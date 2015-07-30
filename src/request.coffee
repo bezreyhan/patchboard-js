@@ -86,7 +86,7 @@ module.exports = class Request extends EventEmitter
         }, callback
       else
         callback new Error "Redirect response did not provide Location"
-        
+
 
 class Response
 
