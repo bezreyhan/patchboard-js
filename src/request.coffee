@@ -36,7 +36,7 @@ module.exports = class Request extends EventEmitter
       path: path
       method: @method
       headers: @headers
-      scheme: protocol.replace ':', ''
+      protocol: protocol
       withCredentials: false
 
     if @body? && Buffer?
