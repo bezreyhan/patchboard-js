@@ -18,14 +18,14 @@
   "dependencies": {
     "evie": "git@github.com:GemHQ/evie.git",
     "fairmont": "git@github.com:GemHQ/fairmont.git",
-    "jsck": "git@github.com:GemHQ/fairmont.git"
+    "jsck": "git@github.com:GemHQ/jsck.git"
   },
   "devDependencies": {
     "deap": "~0.2.0",
     "coffee-script": "~1.9.3",
     "evie": "git@github.com:GemHQ/evie.git",
     "fairmont": "git@github.com:GemHQ/fairmont.git",
-    "jsck": "git@github.com:GemHQ/fairmont.git"
+    "jsck": "git@github.com:GemHQ/jsck.git"
   }
 }
 
