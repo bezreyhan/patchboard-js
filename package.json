@@ -16,15 +16,16 @@
     "lib/"
   ],
   "dependencies": {
-    "evie": "~0.1.3",
-    "fairmont": "~0.8.2",
-    "jsck": "~0.2.5"
+    "evie": "git@github.com:GemHQ/evie.git",
+    "fairmont": "git@github.com:GemHQ/fairmont.git",
+    "jsck": "git@github.com:GemHQ/fairmont.git"
   },
   "devDependencies": {
     "deap": "~0.2.0",
     "coffee-script": "~1.9.3",
-    "evie": "file:../evie",
-    "fairmont": "file:../fairmont",
-    "jsck": "file:../jsck"
-  },
+    "evie": "git@github.com:GemHQ/evie.git",
+    "fairmont": "git@github.com:GemHQ/fairmont.git",
+    "jsck": "git@github.com:GemHQ/fairmont.git"
+  }
 }
+
