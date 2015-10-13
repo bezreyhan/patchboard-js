@@ -36,6 +36,8 @@ module.exports = class Request extends EventEmitter
       path: path
       method: @method
       headers: @headers
+      protocol: protocol
+      withCredentials: false
 
     if @body? && Buffer?
       @headers["Content-Length"] = Buffer.byteLength(@body)
@@ -84,7 +86,7 @@ module.exports = class Request extends EventEmitter
         }, callback
       else
         callback new Error "Redirect response did not provide Location"
-        
+
 
 class Response
 
@@ -131,10 +133,7 @@ class ResponseContent
   process: (callback) ->
     # TODO: take encoding into account
     # TODO: check content-length against actual length
-    if Buffer?
-      @buffer = Buffer.concat @chunks, @length
-    else
-      @buffer = @chunks.join("")
+    @buffer = @chunks.join("")
 
     @process_encoding =>
       @process_type callback
